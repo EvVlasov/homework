@@ -1,0 +1,29 @@
+public class homework {
+    private static java.util.Scanner input;
+
+    public static void main(String[] args) throws java.io.IOException {
+
+        input = new java.util.Scanner(System.in);
+
+       
+        double count = 0;
+        double srednee = 0;
+        double value = 0;
+        double size = 0;
+        System.out.println("Введите число: ");
+
+        while (value != 99) {
+            value = input.nextDouble();
+            if (value == 99) {
+                break;
+            }
+
+            count++;
+            size += value;
+            srednee = size / count;
+
+            System.out.println("Средне арифметическое: " + srednee);
+            System.out.print("Введите следующее число: ");
+        }
+}
+}
