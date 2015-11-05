@@ -1,0 +1,17 @@
+public class homework {
+    private static java.util.Scanner input;
+
+    public static void main(String[] args) throws java.io.IOException {
+
+        input = new java.util.Scanner(System.in);
+        int a = 0;
+        while(a!=99) {
+            System.out.println("if u want to finish this program enter 99");
+            System.out.println("Enter ur munber:");
+            a = input.nextInt();
+            if(a==99)break;
+            else if (a % 2 == 0) System.out.println("even");
+            else System.out.println("Odd");
+        }
+        }
+        }
